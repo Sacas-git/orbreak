@@ -1,0 +1,22 @@
+[
+  { "id": "multiball", "name": "マルチボール", "rarity": "rare", "max_stack": 3, "desc": "ステージ開始時のボール+1",
+    "effects": [ { "stat": "balls_per_stage", "op": "add", "value": 1 } ] },
+  { "id": "split_on_paddle", "name": "分裂打ち", "rarity": "epic", "max_stack": 2, "desc": "パドルで打つたびに15%でボールが分裂",
+    "effects": [ { "stat": "split_chance", "op": "add", "value": 0.15 } ] },
+  { "id": "pierce", "name": "貫通弾", "rarity": "rare", "max_stack": 1, "desc": "耐久1のブロックを最大3個貫通",
+    "effects": [ { "stat": "pierce_count", "op": "set", "value": 3 } ] },
+  { "id": "shard_plus", "name": "破片増量", "rarity": "common", "max_stack": 5, "desc": "全ブロックの破片数+1",
+    "effects": [ { "stat": "shard_bonus_count", "op": "add", "value": 1 } ] },
+  { "id": "shard_range", "name": "長射程破片", "rarity": "common", "max_stack": 3, "desc": "破片の寿命+30%",
+    "effects": [ { "stat": "shard_life_mul", "op": "mul", "value": 1.3 } ] },
+  { "id": "chain_boost", "name": "倍率ブースト", "rarity": "epic", "max_stack": 2, "desc": "連鎖の段数+1として得点計算",
+    "effects": [ { "stat": "chain_bonus_depth", "op": "add", "value": 1 } ] },
+  { "id": "cap_break", "name": "上限突破", "rarity": "rare", "max_stack": 1, "desc": "1回の破壊の得点上限を99,999に",
+    "effects": [ { "stat": "point_cap", "op": "set", "value": 99999 } ] },
+  { "id": "wide_paddle", "name": "ワイドパドル", "rarity": "common", "max_stack": 3, "desc": "パドル幅+8°",
+    "effects": [ { "stat": "paddle_width_bonus_deg", "op": "add", "value": 8 } ] },
+  { "id": "shard_immune", "name": "防護膜", "rarity": "rare", "max_stack": 2, "desc": "破片によるスタンを1ステージ1回無効化",
+    "effects": [ { "stat": "shard_immune_per_stage", "op": "add", "value": 1 } ] },
+  { "id": "slow_chain", "name": "スローチェイン", "rarity": "common", "max_stack": 1, "desc": "段数5以上の連鎖中、0.4秒だけ時間0.5倍",
+    "effects": [ { "stat": "slow_chain", "op": "set", "value": true } ] }
+]
